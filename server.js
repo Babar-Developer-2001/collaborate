@@ -3,7 +3,11 @@ const app = express()
 
 app.get('/', (req,res)=>{
     res.send('hello server')
-})
+});
+app.get('/', (req,res)=>{
+    res.send('hello server from shahab')
+});
+
 
 app.listen(3000, ()=>{
     console.log(' server run successfully');
